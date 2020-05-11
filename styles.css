@@ -151,6 +151,15 @@ table th:first-child {
   color: black;	
 }
 
+/*block or none tr des*/
+.slidedown_none {
+	display: none;
+}
+.slidedown_body {
+	display: table-row;
+}
+
+
 
 
 
