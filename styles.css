@@ -127,8 +127,15 @@ th {
 	font-weight: bold;
 }
 
+td,th{
+	padding: 1vh;
+}
+
 table th:first-child {
 	width: 20%;
+}
+table tr:first-child, table tr:last-child{
+	border-bottom: 3px solid;
 }
 
 /*pre-next button*/
@@ -159,6 +166,37 @@ table th:first-child {
 	display: table-row;
 }
 
+/*uitabs*/
+		.ui-tabs {
+			display: flex;
+			flex-direction: column;
+		}
+
+		ul.tabs li{
+			background: none;
+			color: #222;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+
+		.ui-tabs .tabs {
+				display: flex;
+				justify-content: flex-end;
+		}
+
+		ul.tabs li.current{
+			background: #ededed;
+			color: #222;
+		}
+
+		.tab-content{
+			display: none;
+		}
+
+		.tab-content.current{
+			display: inline-table;
+		}
 
 
 
