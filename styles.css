@@ -153,10 +153,6 @@ table tr:first-child, table tr:last-child{
   
 }
 
-.next, .previous {
-  background-color: #FFF;
-  color: black;	
-}
 
 /*block or none tr des*/
 .slidedown_none {
@@ -181,6 +177,7 @@ table tr:first-child, table tr:last-child{
 		}
 
 		.ui-tabs .tabs {
+				flex-basis: 50%;
 				display: flex;
 				justify-content: flex-end;
 		}
@@ -197,6 +194,36 @@ table tr:first-child, table tr:last-child{
 		.tab-content.current{
 			display: inline-table;
 		}
+	.tabs button {
+		background-color: #FFF;
+		border: none;
+		outline: none;
+	}
+
+	.tabs button:hover, ul.tabs li:hover {
+		background-color: #000;
+		color: #FFF;
+		border-radius: 5px;
+	}
+
+	ul.tabs li.current {
+		background-color: #EFEFEF;
+    border: 1px solid #666;
+    border-radius: 5px;
+	}
+
+	.tab_ui {
+		display: flex;
+		align-items: center;
+	}
+
+	.show-of {
+		flex-basis: 50%;
+	}
+
+
+
+
 
 
 
